@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+body {
+  height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+button {
+  outline: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 10px;
+}
+
+.navbar {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 10px;
+}
+
+.brand_logo {
+  width: 80px;
+  cursor: pointer;
+}
+
+.navbar_items {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.primary {
+  background: crimson;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+  padding: 5px 10px;
+  text-transform: capitalize;
+  transition: all 0.5s;
+}
+
+.secondary {
+  background: none;
+  border-radius: 5px;
+  border: 1px solid crimson;
+  color: crimson;
+  font-size: 15px;
+  padding: 5px 10px;
+  transition: all 0.5s;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_content {
+  margin-left: 20px;
+}
+
+.footer_items {
+  margin-right: 20px;
+}
+
+ion-icon {
+  margin: 0 5px;
+  transition: all 0.5s;
+}
+
+.button_styles {
+  margin: 10px 0;
+}
+/* Hover */
+a:hover {
+  border-bottom: 1px solid crimson;
+  color: crimson;
+}
+
+.primary:hover {
+  color: crimson;
+  background: none;
+  border: 1px solid #dc143c;
+}
+
+.secondary:hover {
+  color: white;
+  background: crimson;
+}
+
+.about_head {
+  color: #16161d;
+  border-bottom: 1px solid crimson;
+  width: 60%;
+  margin-bottom: 15px;
+}
+
+.about_para {
+  justify-content: center;
+}
+
+ion-icon:hover {
+  color: #dc143c;
+}
+/* Responsive */
+@media (min-width: 768px) {
+  .navbar_items {
+    gap: 100px;
+  }
+
+  .about_head {
+    width: 25%;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  ion-icon {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 1024px) {
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+  }
+
+  .navbar_items {
+    gap: 200px;
+  }
+
+  .primary {
+    font-size: 18px;
+  }
+
+  .container {
+    margin-top: 50px;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .hero_content_about {
+    margin-left: 30px;
+  }
+
+  iframe {
+    width: 500px;
+    height: 300px;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
