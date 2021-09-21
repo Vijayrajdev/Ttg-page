@@ -33,9 +33,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  position: relative;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 10px;
 }
 
